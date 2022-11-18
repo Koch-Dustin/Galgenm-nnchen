@@ -71,6 +71,8 @@ def play(word):
         
     if '_' not in secret_word or guess == word:
       clear()
+      msg = "Das gesuchte Wort war: " + word
+      print(msg)
       print("Du hast gewonnen")
       print("übrige versuche: " + str(tries))
       break
